@@ -99,23 +99,11 @@ app.get('/query', function (req, res) {
         stepInfo: [
             {
                 id: "0088bbbd-6b5d-4b17-a8d2-43b4953531de",
-                stepName: "ranoss-base_install",
+                stepName: "base_install",
                 stepProgress: percent,
                 stepStatus: "running",
                 stepHistoryLogs: [
-                    "2017-02-15 14:37:30  execute UmePackageRegisterService",
-                    "2017-02-15 14:37:31  Registered NF package success",
-                    "2017-02-15 14:37:31  初始化网络功能实例[VNFD=R1Base]数据。",
-                    "2017-02-15 14:37:31  创建网络功能实例[VNFD=R1Base]。",
-                    "2017-02-15 14:37:31  向VNFM申请资源。",
-                    "2017-02-15 14:37:37  将VNFD转换成内部模型。",
-                    "2017-02-15 14:37:37  调用插件，计算网络功能规格。",
-                    "2017-02-15 14:37:37  开始创建网络服务实例。",
-                    "2017-02-15 14:37:37  创建服务实例[ZTE_ranoss-portal_0]...",
-                    "2017-02-15 14:37:49  无法创建服务实例。[download_blueprint_fail]",
-                    "2017-02-15 14:37:49  创建网络功能实例[VNFD=R1Base]失败！",
-                    "2017-02-15 14:37:49  向VNFM申请资源失败!",
-                    "2017-02-15 14:37:49  创建网络功能实例[VNFD=R1Base]失败！",
+                    "2017-02-15 14:37:30  execute PackageRegisterService",
                     "2017-02-15 14:37:49  instantiate job fail"
                 ]
             }
@@ -137,37 +125,19 @@ app.get('/ume/smallProducts/orchestration', function (req, res) {
     var content = {
         vnfds: [
             {
-                name: "ranoss-portal.csar",
+                name: "ran-portal",
             },
             {
-                name: "ranoss-base.csar",
+                name: "ran-base",
             },
             {
-                name: "ranoss-necontroll",
+                name: "ran-necontroll",
                 nfd:[
                     {
-                        name: "ranoss-cm.csar",
+                        name: "ran-cm",
                     },
                     {
-                        name: "ranoss-mt.csar",
-                    },
-                    {
-                        name: "ranoss-infocollect.csar",
-                    },
-                    {
-                        name: "ranoss-analysis.csar"
-                    },
-                    {
-                        name: "ranoss-security.csar"
-                    },
-                    {
-                        name: "ranoss-deploy.csar"
-                    },
-                    {
-                        name: "ranoss-hwm.csar"
-                    },
-                    {
-                        name: "ranoss-pub.csar"
+                        name: "ran-mt",
                     }
                 ]
             }
