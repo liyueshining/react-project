@@ -1,0 +1,34 @@
+.file {
+    position: relative;
+    display: inline-block;
+    background: white;
+
+    max-width: 100px;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: deepskyblue;
+}
+.file input {
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file:hover {
+    border-color: deepskyblue;
+    color: deepskyblue;
+    text-decoration: none;
+}
