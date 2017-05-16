@@ -60,11 +60,11 @@ ReactDOM.render(
     <Provider store={ store }>
         <IntlProvider>
             <Router history={ browserHistory }>
-                <Route path="/oki-ui" component={ FirstPage }/>
-                <Route path="/oki-ui/:name" component={ MainPage }>
+                <Route path="/" component={ FirstPage }/>
+                <Route path="/:name" component={ MainPage }>
                     <IndexRoute component={ PermissionProtocal }/>
-                    <Route path="/oki-ui/ume/install" component={ InstallComponent }/>
-                    <Route path="/oki-ui/ume/orchestration" component={ Orchestration }/>
+                    <Route path="/ume/install" component={ InstallComponent }/>
+                    <Route path="/ume/orchestration" component={ Orchestration }/>
                 </Route>
 
             </Router>
