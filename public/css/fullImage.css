@@ -1,0 +1,56 @@
+.firstLayout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle{
+    width: 100%;
+    min-height: 75vh;
+    flex: 1 1 auto;
+}
+
+.components {
+    flex: 1 1 auto;
+    height: 25vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    cursor: pointer;
+    height: 80px;
+}
+
+.banners_li {
+    display: block;
+    min-width: 300px;
+    flex: 1 1 auto;
+}
+
+
+.alignCenter {
+    clear: both;
+    display: block;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .components {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banners_li {
+        flex: 1 1 auto;
+    }
+}
+
+
+
