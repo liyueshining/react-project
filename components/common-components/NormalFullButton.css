@@ -1,0 +1,33 @@
+.btn-normal-full {
+    max-width: 100px;
+    width: 100%;
+
+    max-height: 36px;
+    height: 36px;
+
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: white;
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    background-color: #00abff;
+
+}
+
+.btn-normal-full:hover {
+    background-color: #00a3f5;
+}
+
+.btn-normal-full:active {
+    background-color: #009ceb;
+}
