@@ -1,0 +1,52 @@
+.sameRow {
+    display: inline-block;
+}
+
+.standardFont {
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+
+.zeroLeftMargin {
+    margin-left: 0px;
+}
+
+.tenLeftMargin {
+    composes: sameRow;
+    margin-left: 10px;
+}
+
+.topMargin5 {
+    margin-top: 5%;
+}
+
+.floatRight {
+    float: right;
+}
+
+.width15 {
+    composes: sameRow;
+    width: 15%;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.fontColorRed {
+    composes: standardFont;
+    color: red;
+}
+
+.floatRight {
+    float: right;
+}
+
+
+
+
+
+
+
+
