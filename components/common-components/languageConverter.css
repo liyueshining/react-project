@@ -1,0 +1,38 @@
+.converter-pos {
+    float: right;
+    color: gray;
+    margin-top: 5px;
+}
+
+.converter-pos a {
+    color: darkgrey;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.converter-pos a:hover {
+
+    text-decoration: none;
+    color: lightgray;
+}
+
+.language-icon {
+
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+
+    vertical-align: text-top;
+    margin-right: 8px;
+
+    background-image: url(./language-icon.png);
+    background-repeat:no-repeat;
+    background-position: -5px -5px;
+}
+
+.converter-pos a:hover .language-icon{
+    background-position: -35px -5px;
+}
+
+
