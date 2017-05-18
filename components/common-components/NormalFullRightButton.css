@@ -1,0 +1,8 @@
+.pull-right {
+    float: right !important;
+}
+
+.btn-normal-full-right {
+    composes: pull-right;
+    composes: btn-normal-full from './NormalFullButton.css';
+}
